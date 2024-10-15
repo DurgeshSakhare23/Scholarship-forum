@@ -1,0 +1,23 @@
+<% layout("/layouts/boilerplate") %> 
+<body>
+    <h3>Search Results for "<%= query %>"</h3>
+    <!-- Display Scholarships -->
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+        <% if (scholarships.length > 0) { %>
+            <% scholarships.forEach(scholarship => { %>
+                <div class="card col mb-3" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b><%= scholarship.title %></b></h5>
+                        <p class="card-text"><%= scholarship.description %></p>
+                        <a href="/listings/<%= scholarship._id %>" class="btn btn-primary">Details</a>
+                        <% if (currUser) { %>
+                            <a href="<%= scholarship.apply_link %>" class="btn btn-primary" target="_blank">Apply</a>
+                        <% } %>
+                    </div>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No scholarships found matching your search criteria.</p>
+        <% } %>
+    </div>
+</body>

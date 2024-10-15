@@ -1,0 +1,53 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+    <h2>Edit a Scholarship</h2>
+    <form  method="POST" action="/listings/<%=listing._id %>?_method=PUT" class="needs-validation">
+        <div class="mb-3">
+            <lable for="title" class="form-label">Title</lable>
+            <input name="listing[title]", 
+                value="<%= listing.title %>" ,
+                type="text" ,
+                class="form-control",
+                required>
+                <div class="valid-feedback">Title looks good!</div>
+        </div>
+
+        <div class="mb-3">
+            <lable for="description" class="form-label">Description</lable>
+            <textarea name="listing[description]", class="form-control" required><%=listing.description%></textarea>
+            <div class="invalid-feedback">please enter a valid Description</div>
+        </div>
+        
+        <div class="mb-3">
+            <lable for="amount" class="form-label">Amount</lable>
+            <input name="listing[amount]", 
+                value="<%= listing.amount %>", 
+                type="number",
+                class="form-control" required>
+            <div class="invalid-feedback">please enter a valid Amount</div>
+        </div>
+        
+        <div class="mb-3">
+            <lable for="link" class="form-label">Apply_link</lable>
+            <input name="listing[apply_link]", 
+                value="<%= listing.apply_link %>", 
+                type="text",
+                class="form-control" required>
+            <div class="invalid-feedback">please enter a valid URL</div>
+        </div>
+        
+        <div class="mb-3">
+            <lable for="deadline" class="form-label">Deadline</lable>
+            <input name="listing[deadline]", 
+                value="<%= listing.deadline %>" 
+                type="date",
+                class="form-control" required>
+                <div class="invalid-feedback">please enter a valid Date</div>
+        </div>
+        
+        <button class="btn btn-dark edit-btn mt-3">Edit Scholarship</button>
+    </form>
+</div>
+</div>
+

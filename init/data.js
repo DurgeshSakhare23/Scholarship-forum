@@ -1,0 +1,116 @@
+const scholarships = [
+    {
+        title: "National Scholarship Portal (NSP)",
+        description: "Eligibility: SC/ST/OBC/Minority/EWS students at various education levels. Benefits: Financial aid for tuition fees, maintenance allowances, and more.",
+        amount: null, // Variable based on the scholarship type
+        apply_link: "https://scholarships.gov.in/",
+        deadline: new Date(2024, 12, 7),
+    },
+    {
+        title: "PostMatric Scholarship for SC/ST/OBC",
+        description: "Eligibility: SC/ST/OBC students with family income < INR 2.5 lakhs (SC/ST), INR 1.5 lakhs (OBC). Benefits: Coverage for tuition fees and living expenses.",
+        amount: null,
+        apply_link: "https://scholarships.gov.in/",
+        deadline: new Date(2024, 12, 7),
+    },
+    {
+        title: "PreMatric Scholarship for Minorities",
+        description: "Eligibility: Minority students in Class 1 to 10, family income < INR 1 lakh. Benefits: Tuition fee and maintenance allowance.",
+        amount: null,
+        apply_link: "https://scholarships.gov.in/",
+        deadline: new Date(2024, 12, 7),
+    },
+    {
+        title: "Maulana Azad National Fellowship for Minority Students",
+        description: "Eligibility: Minority students pursuing M.Phil./Ph.D. Benefits: Monthly fellowship of INR 25,000 for M.Phil. and INR 28,000 for Ph.D.",
+        amount: 25000,
+        apply_link: "https://www.ugc.ac.in/",
+        deadline: new Date(2024, 12, 7),
+    },
+    {
+        title: "AICTE Pragati Scholarship for Girls",
+        description: "Eligibility: Female students in technical courses, family income < INR 8 lakhs. Benefits: Up to INR 50,000 per annum for tuition, books, and other expenses.",
+        amount: 50000,
+        apply_link: "https://www.aicteindia.org/schemes/studentsdevelopmentschemes/PRAGATI",
+        deadline: new Date(2024, 12, 7),
+    },
+    {
+        title: "National Scholarship Portal (NSP)",
+        description: "Eligibility: SC/ST/OBC/Minority/EWS students at various education levels. Benefits: Financial aid for tuition fees, maintenance allowances, and more.",
+        amount: null,
+        apply_link: "https://scholarships.gov.in/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "PostMatric Scholarship for SC/ST/OBC",
+        description: "Eligibility: SC/ST/OBC students with family income < INR 2.5 lakhs (SC/ST), INR 1.5 lakhs (OBC). Benefits: Coverage for tuition fees and living expenses.",
+        amount: null,
+        apply_link: "https://scholarships.gov.in/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "PreMatric Scholarship for Minorities",
+        description: "Eligibility: Minority students in Class 1 to 10, family income < INR 1 lakh. Benefits: Tuition fee and maintenance allowance.",
+        amount: null,
+        apply_link: "https://scholarships.gov.in/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "Maulana Azad National Fellowship for Minority Students",
+        description: "Eligibility: Minority students pursuing M.Phil./Ph.D. Benefits: Monthly fellowship of INR 25,000 for M.Phil. and INR 28,000 for Ph.D.",
+        amount: 25000,
+        apply_link: "https://www.ugc.ac.in/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "AICTE Pragati Scholarship for Girls",
+        description: "Eligibility: Female students in technical courses, family income < INR 8 lakhs. Benefits: Up to INR 50,000 per annum for tuition, books, and other expenses.",
+        amount: 50000,
+        apply_link: "https://www.aicteindia.org/schemes/studentsdevelopmentschemes/PRAGATI",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "Prime Minister’s Scholarship Scheme (PMSS)",
+        description: "Eligibility: Children of ex-servicemen, CAPF, Assam Rifles, or Railway staff. Benefits: INR 2,500-3,000 per month.",
+        amount: 3000,
+        apply_link: "https://www.ksb.gov.in/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "INSPIRE Scholarship for Higher Education (SHE)",
+        description: "Eligibility: Top 1% students in 12th Board exams or JEE/NEET rank holders. Benefits: INR 80,000 annually for pursuing science education.",
+        amount: 80000,
+        apply_link: "http://www.inspiredst.gov.in/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "Kishore Vaigyanik Protsahan Yojana (KVPY)",
+        description: "Eligibility: Class 11, 12, and 1st-year UG science students with interest in research. Benefits: Monthly stipend of INR 5,000 for M.Sc. students and INR 7,000 for Ph.D. students.",
+        amount: 7000,
+        apply_link: "http://kvpy.iisc.ernet.in/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "Central Sector Scheme of Scholarships for College and University Students",
+        description: "Eligibility: 80%+ in Class 12, family income < INR 8 lakhs. Benefits: INR 10,000-20,000 annually.",
+        amount: 20000,
+        apply_link: "https://scholarships.gov.in/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "ONGC Scholarship for SC/ST and OBC Students",
+        description: "Eligibility: SC/ST/OBC students in engineering/medical/management courses. Benefits: INR 48,000 per annum.",
+        amount: 48000,
+        apply_link: "https://www.ongcscholar.org/",
+        deadline: new Date(2024, 9, 7),
+    },
+    {
+        title: "NTPC Scholarship Scheme",
+        description: "Eligibility: SC/ST/PwD students in engineering/MBBS/MBA. Benefits: INR 1,500 per month for the entire duration of the course.",
+        amount: 1500,
+        apply_link: "https://www.ntpc.co.in/",
+        deadline: new Date(2024, 9, 7),
+    }
+];
+
+module.exports = {data :scholarships};
